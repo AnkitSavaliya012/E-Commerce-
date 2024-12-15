@@ -1,0 +1,97 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Terms Section */
+  .terms-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .terms-box {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  h2::before {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #007BFF;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .terms-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .terms-box:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .terms-box {
+      padding: 15px 20px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  

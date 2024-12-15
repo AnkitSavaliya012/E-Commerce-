@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #007BFF;
+    margin: 10px auto 0;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 20px auto 50px;
+  }
+  
+  /* Values Section */
+  .values-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .value-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #007BFF;
+  }
+  
+  .value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .value-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 900px) {
+    .grid, .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .values-section h2, .stats-section h2 {
+      font-size: 2rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  

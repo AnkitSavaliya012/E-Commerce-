@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Header */
+.help-header {
+    color: #333;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.help-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.help-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Contact Support Section */
+.contact-support {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact-support h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-support p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .help-header h1 {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        font-size: 1.3rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
